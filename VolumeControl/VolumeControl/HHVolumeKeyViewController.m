@@ -31,8 +31,6 @@
     
     [self p_getVolumeView];
     
-    [self p_hiddIcon];
-    
     [self p_addObserver];
     
     [self p_addObserverControlCenter];
@@ -41,12 +39,19 @@
 }
 
 #pragma mark - IBActions
+//改变系统音量
 - (IBAction)ChangeSystemVolumeClick:(UIButton *)sender {
     //改变系统音量，这个值的范围为0.0f and 1.0f
     [self.volumeViewSlider setValue:1.0f animated:NO];
     
     //    // send UI control event to make the change effect right now.
     //    [self.volumeViewSlider sendActionsForControlEvents:UIControlEventTouchUpInside];
+}
+
+//控制音量图标显示
+- (IBAction)hiddenIcon:(UIButton *)sender {
+    sender.selected = !sender.selected;
+    [self p_hiddIcon];
 }
 
 #pragma mark - Private

@@ -57,6 +57,14 @@
                         <action selector="ChangeSystemVolumeClick:" destination="-1" eventType="touchUpInside" id="2pY-2i-FNX"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iTk-ZZ-8Yf">
+                    <rect key="frame" x="110" y="382" width="101" height="30"/>
+                    <state key="normal" title="隐藏音量图标"/>
+                    <state key="selected" title="显示音量图标"/>
+                    <connections>
+                        <action selector="hiddenIcon:" destination="-1" eventType="touchUpInside" id="ZGQ-SN-MvE"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
@@ -65,7 +73,10 @@
                 <constraint firstItem="CWj-Jw-lvD" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="RD5-d4-y38"/>
                 <constraint firstItem="sKC-Pd-u4Z" firstAttribute="leading" secondItem="O90-et-cek" secondAttribute="trailing" constant="33" id="RN2-mS-Wir"/>
                 <constraint firstItem="wIL-uf-pC1" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="S5w-H3-1eX"/>
+                <constraint firstItem="iTk-ZZ-8Yf" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="110" id="X5H-2Q-Ca4"/>
+                <constraint firstItem="iTk-ZZ-8Yf" firstAttribute="top" secondItem="wIL-uf-pC1" secondAttribute="bottom" constant="83" id="XM2-hA-pi6"/>
                 <constraint firstItem="O90-et-cek" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="107" id="aAc-ht-Gne"/>
+                <constraint firstAttribute="trailing" secondItem="iTk-ZZ-8Yf" secondAttribute="trailing" constant="109" id="bOy-nI-AwA"/>
                 <constraint firstItem="DkH-Hy-8T5" firstAttribute="top" secondItem="sKC-Pd-u4Z" secondAttribute="bottom" constant="27" id="hJ0-wW-BbK"/>
                 <constraint firstItem="CWj-Jw-lvD" firstAttribute="top" secondItem="O90-et-cek" secondAttribute="bottom" constant="28" id="hJ6-kl-b3f"/>
                 <constraint firstItem="sKC-Pd-u4Z" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="105" id="t8K-Y0-0CL"/>

@@ -53,12 +53,13 @@
 }
 
 /**
- *  退出控制中心，重新控制音量键按钮
+ *  进入前台后，重新设置player状态为播放
  */
 - (void)didBecomeActive {
     [self.player play];
 }
 
+#pragma mark - Lazy
 /**
  *  加载音频播放文件
  */

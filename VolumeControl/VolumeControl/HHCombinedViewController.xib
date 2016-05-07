@@ -1,19 +1,66 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HHCombinedViewController">
             <connections>
+                <outlet property="middleSwitch" destination="zQj-Q5-Nto" id="Waa-Sl-TUs"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="volumeLabel" destination="hWv-E4-S8W" id="KoE-zX-gup"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
-            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="音量" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fm3-re-Vgp">
+                    <rect key="frame" x="20" y="95" width="42" height="18"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="42" id="Abm-vY-xQg"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hWv-E4-S8W">
+                    <rect key="frame" x="104" y="95" width="129" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="129" id="e1r-Of-dkZ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="耳机中间键" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xgt-TQ-ynw">
+                    <rect key="frame" x="13" y="190" width="85" height="18"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="85" id="6rs-nu-lre"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zQj-Q5-Nto">
+                    <rect key="frame" x="128" y="183" width="51" height="31"/>
+                </switch>
+            </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="zQj-Q5-Nto" firstAttribute="top" secondItem="hWv-E4-S8W" secondAttribute="bottom" constant="67" id="6I2-O4-X2E"/>
+                <constraint firstItem="fm3-re-Vgp" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="95" id="ExD-gE-eIr"/>
+                <constraint firstItem="Xgt-TQ-ynw" firstAttribute="top" secondItem="fm3-re-Vgp" secondAttribute="bottom" constant="77" id="NRZ-kw-QRY"/>
+                <constraint firstItem="hWv-E4-S8W" firstAttribute="leading" secondItem="fm3-re-Vgp" secondAttribute="trailing" constant="42" id="QU5-es-xvL"/>
+                <constraint firstItem="hWv-E4-S8W" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="95" id="SJU-RP-KSm"/>
+                <constraint firstItem="fm3-re-Vgp" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="YCU-oi-jGc"/>
+                <constraint firstItem="zQj-Q5-Nto" firstAttribute="leading" secondItem="Xgt-TQ-ynw" secondAttribute="trailing" constant="30" id="hmf-lN-gtH"/>
+                <constraint firstItem="Xgt-TQ-ynw" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="13" id="s7a-Jx-Jda"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <point key="canvasLocation" x="423" y="358"/>
         </view>
     </objects>
 </document>

@@ -43,9 +43,6 @@
 - (IBAction)ChangeSystemVolumeClick:(UIButton *)sender {
     //改变系统音量，这个值的范围为0.0f and 1.0f
     [self.volumeViewSlider setValue:1.0f animated:NO];
-    
-    //    // send UI control event to make the change effect right now.
-    //    [self.volumeViewSlider sendActionsForControlEvents:UIControlEventTouchUpInside];
 }
 
 //控制音量图标显示

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HHEarphoneViewController">
+            <connections>
+                <outlet property="middleSwitch" destination="E7m-Uz-b2I" id="3Cd-df-sVd"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="按耳机中间键" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lJ8-Yh-Tbv">
+                    <rect key="frame" x="16" y="100" width="110" height="18"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="110" id="8ZZ-88-ZdW"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="E7m-Uz-b2I">
+                    <rect key="frame" x="166" y="90" width="51" height="31"/>
+                </switch>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="lJ8-Yh-Tbv" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="100" id="DUa-mM-IxN"/>
+                <constraint firstItem="E7m-Uz-b2I" firstAttribute="leading" secondItem="lJ8-Yh-Tbv" secondAttribute="trailing" constant="40" id="WWa-QB-gJj"/>
+                <constraint firstItem="E7m-Uz-b2I" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="90" id="eeq-gn-CoG"/>
+                <constraint firstItem="lJ8-Yh-Tbv" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="neX-z8-Ek7"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <point key="canvasLocation" x="293" y="357"/>
+        </view>
+    </objects>
+</document>

@@ -27,6 +27,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.title = @"手机实体按键";
+    
     [self p_getVolumeView];
     
     [self p_hiddIcon];

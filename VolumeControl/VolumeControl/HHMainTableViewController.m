@@ -8,6 +8,7 @@
 
 #import "HHMainTableViewController.h"
 #import "HHVolumeKeyViewController.h"
+#import "HHEarphoneViewController.h"
 
 @interface HHMainTableViewController ()
 
@@ -19,6 +20,8 @@
     [super viewDidLoad];
     
     self.title = @"音量控制Demo";
+    
+    self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"返回" style:UIBarButtonItemStylePlain target:nil action:nil];
 
 }
 
@@ -39,7 +42,7 @@
         cell.textLabel.text = @"手机实体音量按键";
     }
     else {
-        cell.textLabel.text = @"耳机音量键";
+        cell.textLabel.text = @"耳机中间键";
     }
     
     return cell;
@@ -51,6 +54,10 @@
     if (indexPath.row == 0) {
         HHVolumeKeyViewController *VolumeKeyVc = [[HHVolumeKeyViewController alloc] init];
         [self.navigationController pushViewController:VolumeKeyVc animated:YES];
+    }
+    else {
+        HHEarphoneViewController *earphoneVc = [[HHEarphoneViewController alloc] init];
+        [self.navigationController pushViewController:earphoneVc animated:YES];
     }
 }
 

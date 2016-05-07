@@ -7,6 +7,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HHVolumeKeyViewController">
             <connections>
+                <outlet property="otherVolumeLabel" destination="DkH-Hy-8T5" id="eTS-VY-VsL"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
                 <outlet property="volumeLabel" destination="sKC-Pd-u4Z" id="RqC-9l-Kyp"/>
             </connections>
@@ -16,17 +17,17 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="当前音量" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O90-et-cek">
-                    <rect key="frame" x="64" y="107" width="60" height="18"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="方法一当前音量" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O90-et-cek">
+                    <rect key="frame" x="0.0" y="107" width="120" height="18"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="60" id="Xg2-er-pnz"/>
+                        <constraint firstAttribute="width" constant="120" id="Xg2-er-pnz"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sKC-Pd-u4Z">
-                    <rect key="frame" x="157" y="105" width="139" height="21"/>
+                    <rect key="frame" x="153" y="105" width="139" height="21"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="139" id="EoI-hl-U8h"/>
                     </constraints>
@@ -34,13 +35,42 @@
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="方法二当前音量" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CWj-Jw-lvD">
+                    <rect key="frame" x="0.0" y="153" width="120" height="18"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="120" id="25V-l3-n1w"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DkH-Hy-8T5">
+                    <rect key="frame" x="153" y="153" width="139" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wIL-uf-pC1">
+                    <rect key="frame" x="104" y="269" width="112" height="30"/>
+                    <state key="normal" title="设置系统音量为1"/>
+                    <connections>
+                        <action selector="ChangeSystemVolumeClick:" destination="-1" eventType="touchUpInside" id="2pY-2i-FNX"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="O90-et-cek" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="64" id="Opi-SR-cCF"/>
+                <constraint firstItem="DkH-Hy-8T5" firstAttribute="width" secondItem="sKC-Pd-u4Z" secondAttribute="width" id="HFy-cO-L6U"/>
+                <constraint firstItem="O90-et-cek" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Opi-SR-cCF"/>
+                <constraint firstItem="CWj-Jw-lvD" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="RD5-d4-y38"/>
                 <constraint firstItem="sKC-Pd-u4Z" firstAttribute="leading" secondItem="O90-et-cek" secondAttribute="trailing" constant="33" id="RN2-mS-Wir"/>
+                <constraint firstItem="wIL-uf-pC1" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="S5w-H3-1eX"/>
                 <constraint firstItem="O90-et-cek" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="107" id="aAc-ht-Gne"/>
+                <constraint firstItem="DkH-Hy-8T5" firstAttribute="top" secondItem="sKC-Pd-u4Z" secondAttribute="bottom" constant="27" id="hJ0-wW-BbK"/>
+                <constraint firstItem="CWj-Jw-lvD" firstAttribute="top" secondItem="O90-et-cek" secondAttribute="bottom" constant="28" id="hJ6-kl-b3f"/>
                 <constraint firstItem="sKC-Pd-u4Z" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="105" id="t8K-Y0-0CL"/>
+                <constraint firstItem="wIL-uf-pC1" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="y9h-EJ-E5n"/>
+                <constraint firstItem="DkH-Hy-8T5" firstAttribute="leading" secondItem="CWj-Jw-lvD" secondAttribute="trailing" constant="33" id="yrS-WT-27M"/>
             </constraints>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
             <point key="canvasLocation" x="228" y="355"/>

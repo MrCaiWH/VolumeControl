@@ -11,7 +11,7 @@
 #import <AVFoundation/AVFoundation.h>
 
 @interface HHEarphoneViewController ()
-/** 设置音量滚动View */
+/** 音频播放器 */
 @property (nonatomic, strong) AVPlayer *player;
 /** 点击耳机中间键触发开关变化 */
 @property (weak, nonatomic) IBOutlet UISwitch *middleSwitch;
@@ -28,7 +28,7 @@
     //远程遥控需要播放一段音频激活，否则无法使用
     [self.player play];
     
-    //当APP进入后台后，音频播放状态会变为位置，在再次进入前台后，需要重新播放音频，远程遥控才能正常使用
+    //当APP进入后台后，音频播放状态会变为未知AVPlayerStatusUnknown，在再次进入前台后，需要重新播放音频，远程遥控才能正常使用
     [self p_addObserver];
     
     //开始接受远程事件
@@ -56,10 +56,6 @@
  *  退出控制中心，重新控制音量键按钮
  */
 - (void)didBecomeActive {
-    
-//    AVPlayerStatusUnknown,
-//    AVPlayerStatusReadyToPlay,
-//    AVPlayerStatusFailed
     [self.player play];
 }
 

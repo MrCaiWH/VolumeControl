@@ -8,3 +8,13 @@ iOS监听点击音量实体键和耳机音量设置按钮实现方法
 
 进入前后台，走一下四个方法
 ![说明文本](1.png)
+
+二.耳机中间键远程远程控制的坑
+
+AVPlayer的status属性是个枚举，有三个值
+
+	//    AVPlayerStatusUnknown,
+	//    AVPlayerStatusReadyToPlay,
+	//    AVPlayerStatusFailed
+	
+当APP进入后台后，音频播放状态会变为AVPlayerStatusUnknown，在再次进入前台后，需要重新播放音频，使其状态值变为AVPlayerStatusReadyToPlay，远程遥控才能正常使用。

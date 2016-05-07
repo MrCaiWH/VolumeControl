@@ -25,6 +25,7 @@
 
 @implementation HHCombinedViewController
 
+#pragma mark - ViewLife
 - (void)viewDidLoad {
     [super viewDidLoad];
 

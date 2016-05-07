@@ -20,8 +20,8 @@
 		4F96EC831CDE0C8700594FFE /* HHEarphoneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F96EC811CDE0C8700594FFE /* HHEarphoneViewController.m */; };
 		4F96EC841CDE0C8700594FFE /* HHEarphoneViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F96EC821CDE0C8700594FFE /* HHEarphoneViewController.xib */; };
 		4F96EC861CDE105900594FFE /* silent.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 4F96EC851CDE105900594FFE /* silent.m4a */; };
-		4F96EC8A1CDE2E8300594FFE /* CombinedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F96EC881CDE2E8300594FFE /* CombinedViewController.m */; };
-		4F96EC8B1CDE2E8300594FFE /* CombinedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F96EC891CDE2E8300594FFE /* CombinedViewController.xib */; };
+		4F96EC8F1CDE372600594FFE /* HHCombinedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F96EC8D1CDE372600594FFE /* HHCombinedViewController.m */; };
+		4F96EC901CDE372600594FFE /* HHCombinedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F96EC8E1CDE372600594FFE /* HHCombinedViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,9 +65,9 @@
 		4F96EC811CDE0C8700594FFE /* HHEarphoneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHEarphoneViewController.m; sourceTree = "<group>"; };
 		4F96EC821CDE0C8700594FFE /* HHEarphoneViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HHEarphoneViewController.xib; sourceTree = "<group>"; };
 		4F96EC851CDE105900594FFE /* silent.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = silent.m4a; sourceTree = "<group>"; };
-		4F96EC871CDE2E8300594FFE /* CombinedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CombinedViewController.h; sourceTree = "<group>"; };
-		4F96EC881CDE2E8300594FFE /* CombinedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CombinedViewController.m; sourceTree = "<group>"; };
-		4F96EC891CDE2E8300594FFE /* CombinedViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CombinedViewController.xib; sourceTree = "<group>"; };
+		4F96EC8C1CDE372600594FFE /* HHCombinedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHCombinedViewController.h; sourceTree = "<group>"; };
+		4F96EC8D1CDE372600594FFE /* HHCombinedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHCombinedViewController.m; sourceTree = "<group>"; };
+		4F96EC8E1CDE372600594FFE /* HHCombinedViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HHCombinedViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,9 +133,9 @@
 				4F96EC801CDE0C8700594FFE /* HHEarphoneViewController.h */,
 				4F96EC811CDE0C8700594FFE /* HHEarphoneViewController.m */,
 				4F96EC821CDE0C8700594FFE /* HHEarphoneViewController.xib */,
-				4F96EC871CDE2E8300594FFE /* CombinedViewController.h */,
-				4F96EC881CDE2E8300594FFE /* CombinedViewController.m */,
-				4F96EC891CDE2E8300594FFE /* CombinedViewController.xib */,
+				4F96EC8C1CDE372600594FFE /* HHCombinedViewController.h */,
+				4F96EC8D1CDE372600594FFE /* HHCombinedViewController.m */,
+				4F96EC8E1CDE372600594FFE /* HHCombinedViewController.xib */,
 			);
 			path = VolumeControl;
 			sourceTree = "<group>";
@@ -273,11 +273,11 @@
 			files = (
 				4F47CE8D1CDDA01A0014BBEA /* LaunchScreen.storyboard in Resources */,
 				4F96EC861CDE105900594FFE /* silent.m4a in Resources */,
+				4F96EC901CDE372600594FFE /* HHCombinedViewController.xib in Resources */,
 				4F47CE8A1CDDA01A0014BBEA /* Assets.xcassets in Resources */,
 				4F96EC841CDE0C8700594FFE /* HHEarphoneViewController.xib in Resources */,
 				4F47CEBA1CDDA4E40014BBEA /* HHVolumeKeyViewController.xib in Resources */,
 				4F47CE881CDDA01A0014BBEA /* Main.storyboard in Resources */,
-				4F96EC8B1CDE2E8300594FFE /* CombinedViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,11 +303,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				4F47CEB21CDDA0EC0014BBEA /* HHMainTableViewController.m in Sources */,
-				4F96EC8A1CDE2E8300594FFE /* CombinedViewController.m in Sources */,
 				4F96EC831CDE0C8700594FFE /* HHEarphoneViewController.m in Sources */,
 				4F47CE821CDDA01A0014BBEA /* AppDelegate.m in Sources */,
 				4F47CEB91CDDA4E40014BBEA /* HHVolumeKeyViewController.m in Sources */,
 				4F47CE7F1CDDA01A0014BBEA /* main.m in Sources */,
+				4F96EC8F1CDE372600594FFE /* HHCombinedViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

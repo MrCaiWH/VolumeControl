@@ -1,5 +1,5 @@
 //
-//  CombinedViewController.h
+//  HHCombinedViewController.h
 //  VolumeControl
 //
 //  Created by 蔡万鸿 on 16/5/7.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CombinedViewController : UIViewController
+@interface HHCombinedViewController : UIViewController
 
 @end
